@@ -25,7 +25,7 @@ SECRET_KEY = '-#_$4*j*06n^o4_cq0j-&7e12d6p2mrryug_3qy25=(vy4@&&u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['sleepy-river-45708.git','0:0:0:0','127.0.0.1']
+ALLOWED_HOSTS = ['sleepy-river-45708','0:0:0:0','127.0.0.1','sleepy-river-45708.herokuapp']
 
 
 # Application definition
