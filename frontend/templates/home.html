@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="line"></div>
+<div class="new_article">
+<div class="new_article--text">
+	<span class='new'>new</span>
+	<h4 class="new_article--title">Почему подросткам стоит изучать программирование? </h4>
+	<p class="new_article--content">Объясняем почему словосочетание «программирование для подростков» не должно вызывать скептическую улыбку и какие полезные навыки приобретают ребята, изучая программирование.</p>
+	<a href="#" class="new_article--link">Читать</a>
+</div>
+<div class="new_article--image"><img src="{% static 'images/1Statya_3.jpg' %}"></div>
+</div>
+    <br>
+    <div class="line"></div>
+    <h4 class='articles_title'>Другие статьи</h4>
+    <div class="articles">
+    	{% if articles %}
+    	
+        {% for article in articles %}
+            <div class="article">
+                {% include '_post.html' %}<br><br>
+            </div>
+        {% endfor %}
+        {% endif %}
+    </div>
+
+{% endblock %}

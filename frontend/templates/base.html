@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Base page{% endblock %}</title>
+
+    <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.min.css' %}"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}"  media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+    <div class="cont">
+<header>
+    <menu>
+        <div class="menu_logo">
+            <div class="logo">  <img src="{% static 'images/logo.svg' %}"></div>
+            <img src='' alt="" class="logo">
+            <a href="{% url 'home_page' %}" class='logo-link'>Блог</a>
+        </div>
+        <div class="menu-add-link">
+          <a href="{% url 'add_article' %}"> + Добавить статью</a>
+        </div>
+    </menu>
+</header>
+
+
+
+{% block content %}{% endblock %}
+
+
+</div>
+
+<script type="text/javascript" defer src="{% static 'js/materialize.min.js' %}"></script>
+</body>
+</html>
