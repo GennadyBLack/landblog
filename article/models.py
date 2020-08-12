@@ -5,8 +5,8 @@ class Article(models.Model):
     
 
     title = models.CharField(max_length=500, verbose_name='Название поста')
-    body = models.TextField(verbose_name='Текст поста')
-    description = models.TextField('Description',max_length=500,null=True)
+    body = models.CharField(max_length=500,verbose_name='Текст поста')
+    description = models.CharField(max_length=500,null=True)
     poster = models.ImageField('Постер',upload_to='articles/',null=True)
     date_created = models.DateTimeField('Дата создания', auto_now_add=True)
 

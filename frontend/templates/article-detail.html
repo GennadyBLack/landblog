@@ -3,10 +3,26 @@
 
 {% block content %}
 <div class="content">
-	<h3></h3>
-	<img src="" alt="" class="article-detail-img">
-	<div class="description"></div>
-	<div class="article-body"></div>
-</div>
+	
 
+	{% if article.title %}
+<h3 >{{article.title}}</h3>
+	{% endif %}
+
+	{% if article.poster %}
+ <img src={{article.poster.url}} class="card-img-top" alt="...">
+
+	{% endif %}
+
+	{% if article.description %}
+<div class="description">{{article.description}}</div>
+	{% endif %}
+
+	{% if article.body %}
+<div class="article-body">{{article.body}}</div>
+	{% endif %}
+	
+	
+	
+</div>
 {% endblock %}

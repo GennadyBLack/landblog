@@ -37,6 +37,8 @@ class AddArticleView(generic.View):
                 Article.objects.create(
                     title=form.cleaned_data['title'],
                     body=form.cleaned_data['body'],
+                    description=form.cleaned_data['description'],
+                    poster=form.cleaned_data['poster'],
                 )
 
                 return HttpResponseRedirect(reverse('home_page'))

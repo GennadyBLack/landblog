@@ -128,8 +128,43 @@ text-align: center;
     display: block;
     padding: 10px;
 color: #979797;}
+
 .card-title{
     color: #315AF2;
     font-family: Circe Rounded;
-font-size: 24px;
+    font-size: 24px;
+}
+
+/*.artic{
+    width: 400px;
+    height: 400px;
+}*/
+.content{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    
+}
+.content h3{
+color: #315AF2;
+
+}
+.content img{
+    width: 50%;
+}
+.add_article--title{
+    font-family: Museo Cyrl;
+font-size: 45px;
+line-height: 52px;
+
+color: #315AF2;
 }
